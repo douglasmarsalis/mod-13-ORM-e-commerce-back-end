@@ -28,6 +28,7 @@ THEN I am able to successfully create, update, and delete data in my database
 ## Sources
 * Dependency packages: https://www.npmjs.com 
 * Validation: https://sequelize.org/docs/v6/core-concepts/validations-and-constraints/
+* sequelize methods: https://sebhastian.com/sequelize-belongstomany/
 * RICE UNIVERSITY BOOT CAMP Activities for MySQL and ORM.
 * Special thanks to my tutor Ben.
 

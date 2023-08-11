@@ -22,9 +22,9 @@ Category.init(
 // Link to database connection    
     sequelize,
     timestamps: false,          // Sets the time stamp to false to remove fields
-    freezeTableName: true,      // Stops the auto-pluralization performed by Sequelize
+    freezeTableName: true,      // Stops the auto-pluralization performed by Sequelize - Sequelize will infer the table name to be equal to the model name without modification
     underscored: true,          // Converts camelCase to underscore
-    modelName: 'category',
+    modelName: 'category',      // Sets the table name inside the database
   }
 );
 

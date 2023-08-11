@@ -20,10 +20,10 @@ Tag.init(
   {
 // Link to database connection
     sequelize,
-    timestamps: false,          // Set the time stamp to false to remove fields
-    freezeTableName: true,      // Stops the auto-pluralization performed by Sequelize
+    timestamps: false,          // Sets the time stamp to false to remove fields
+    freezeTableName: true,      // Stops the auto-pluralization performed by Sequelize - Sequelize will infer the table name to be equal to the model name without modification
     underscored: true,          // Converts camelCase to underscore
-    modelName: 'tag',
+    modelName: 'tag',           // Sets the table name inside the database
   }
 );
 
