@@ -26,10 +26,10 @@ WHEN I test API POST, PUT, and DELETE routes in Insomnia Core
 THEN I am able to successfully create, update, and delete data in my database
 
 ## Sources
-*
-*
-*
-*
+* Dependency packages: https://www.npmjs.com 
+* Validation: https://sequelize.org/docs/v6/core-concepts/validations-and-constraints/
+* RICE UNIVERSITY BOOT CAMP Activities for MySQL and ORM.
+* Special thanks to my tutor Ben.
 
 ## Link to Deployed Site
 
