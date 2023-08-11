@@ -19,10 +19,11 @@ Category.init(
     }
   },
   {
+// Link to database connection    
     sequelize,
-    timestamps: false,
-    freezeTableName: true,
-    underscored: true,
+    timestamps: false,          // Sets the time stamp to false to remove fields
+    freezeTableName: true,      // Stops the auto-pluralization performed by Sequelize
+    underscored: true,          // Converts camelCase to underscore
     modelName: 'category',
   }
 );

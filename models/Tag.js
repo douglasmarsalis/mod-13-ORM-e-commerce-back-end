@@ -13,15 +13,16 @@ Tag.init(
       primaryKey: true,
       autoIncrement: true
     },
-    tag_name: {
+    tag_name: {                 // Added this code
       type: DataTypes.STRING
     }
   },
   {
+// Link to database connection
     sequelize,
-    timestamps: false,
-    freezeTableName: true,
-    underscored: true,
+    timestamps: false,          // Set the time stamp to false to remove fields
+    freezeTableName: true,      // Stops the auto-pluralization performed by Sequelize
+    underscored: true,          // Converts camelCase to underscore
     modelName: 'tag',
   }
 );

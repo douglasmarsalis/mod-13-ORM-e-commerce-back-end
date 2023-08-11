@@ -1,12 +1,12 @@
-// import important parts of sequelize library
+// Imports important parts of sequelize library
 const { Model, DataTypes } = require('sequelize');
-// import our database connection from config.js
+// Imports our database connection from config.js
 const sequelize = require('../config/connection');
 
-// Initialize Product model (table) by extending off Sequelize's Model class
+// Initializes Product model (table) by extending off Sequelize's Model class
 class Product extends Model {}
 
-// set up fields and rules for Product model
+// Sets up fields and rules for Product model
 Product.init(
 // Defined columns
   {
@@ -35,7 +35,7 @@ Product.init(
         isNumeric: true
       }
     },
-    category_id: {            // Added code
+    category_id: {            // Added this code
       type: DataTypes.INTEGER,
       allowNull: true,
       references: {
@@ -45,10 +45,11 @@ Product.init(
     }
   },
   {
-    sequelize,
-    timestamps: false,
-    freezeTableName: true,
-    underscored: true,
+// Link to database connection    
+    sequelize, 
+    timestamps: false,         // Set the time stamp to false to remove fields   
+    freezeTableName: true,     // Stops the auto-pluralization performed by Sequelize
+    underscored: true,         // Converts camelCase to underscore
     modelName: 'product',
   }
 );

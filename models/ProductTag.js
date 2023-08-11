@@ -19,7 +19,7 @@ ProductTag.init(
         model: 'product',
         key: 'id'
       }
-    }
+    },
     tag_id: {                   // Added this code
       type: DataTypes.INTEGER,
       references: {
@@ -29,10 +29,11 @@ ProductTag.init(
     }
   },
   {
-    sequelize,
-    timestamps: false,
-    freezeTableName: true,
-    underscored: true,
+// Link to database connection    
+    sequelize,   
+    timestamps: false,          // Set the time stamp to false to remove fields 
+    freezeTableName: true,      // Stops the auto-pluralization performed by Sequelize
+    underscored: true,          // Converts camelCase to underscore
     modelName: 'product_tag',
   }
 );
