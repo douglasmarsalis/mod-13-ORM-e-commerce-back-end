@@ -5,8 +5,17 @@ const sequelize = require('../config/connection.js');
 class Tag extends Model {}
 
 Tag.init(
+// Defined columns  
   {
-    // define columns
+    id: {                       // Added this code
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true
+    },
+    tag_name: {
+      type: DataTypes.STRING
+    }
   },
   {
     sequelize,
