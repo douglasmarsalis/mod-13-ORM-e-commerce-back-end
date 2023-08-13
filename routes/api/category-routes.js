@@ -63,11 +63,48 @@ router.post('/', (req, res) => {
 // Updates a category by its `id` value
 // Will display status 404 or 500 if not found
 router.put('/:id', (req, res) => {
-  
+  Category.update(
+    {
+      category_name: req.body.category_name
+    },
+    {
+      where: {
+        id: req.params.id
+      }
+    }
+  )
+  .then(categoryData => {
+    if (!categoryData) {
+      res.status(404).json({ message: 'Sorry, no category exists with this id!' });
+      return;
+    }
+    res.json(categoryData);
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json({ message: 'Internal Server Error!' });
+  });
 });
 
+// Deletes a category by its `id` value
+// Will display status 404 or 500 if not found
 router.delete('/:id', (req, res) => {
-  // delete a category by its `id` value
+  Category.destroy({
+    where: {
+      id: req.params.id
+    }
+  })
+  .then(categoryData => {
+    if (!categoryData) {
+      res.status(404).json({ message: 'Sorry, no category exists with this id!' });
+      return;
+    }
+    res.json(categoryData);
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json({ message: 'Internal Server Error!' });
+  });
 });
 
 module.exports = router;
