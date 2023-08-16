@@ -22,14 +22,14 @@ Category.hasMany(Product, {
 // Each record in the junction table will keep track of the primary keys of both models. - Added this code
 Product.belongsToMany(Tag, {
   through: ProductTag,
-  as: 'productTag_tag',
+ // as: 'productTag_tag',
   foreignKey: 'product_id'
 });
 
 // Tags belongToMany Products (through ProductTag) - Added this code
 Tag.belongsToMany(Product, {
   through: ProductTag,
-  as: 'productTag_product',
+ // as: 'productTag_product',
   foreignKey: 'tag_id'
 });
 
