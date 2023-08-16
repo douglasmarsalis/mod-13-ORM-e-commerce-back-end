@@ -43,6 +43,13 @@ https://github.com/douglasmarsalis/mod-13-ORM-e-commerce-back-end
 
 ## Demonstration Video
 
+* Opening - mysql, source schema.sql, run seed, run server.js and Get
+[Opening_mysql_source_seed_server_get.webm](https://github.com/douglasmarsalis/mod-13-ORM-e-commerce-back-end/assets/112460009/c685649a-8748-409e-bf2a-f024da2724cf)
+
+* Get Single - categories, products, tags
+[Get_single_cat_prod_tag.webm](https://github.com/douglasmarsalis/mod-13-ORM-e-commerce-back-end/assets/112460009/0c9ce7c3-25c1-451a-ad0e-4ed7b187ae6e)
+
+* Post Put Delete - all
 
 
 ## License
