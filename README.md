@@ -34,6 +34,8 @@ THEN I am able to successfully create, update, and delete data in my database
 * Special thanks to my tutor Ben.
 
 ## Usage
+* FROM NEW TERMINAL
+* npm install OR npm i
 * mysql -u root -p
 * enter password for mysql
 * source db/schema.sql
@@ -45,6 +47,11 @@ THEN I am able to successfully create, update, and delete data in my database
 * Should receive message - App is listening on port 3001!
 
 * Open Insomnia and run tests
+
+## Features
+* Express.js
+* MySQL
+* Sequelize
 
 ## Link to Deployed Site
 
