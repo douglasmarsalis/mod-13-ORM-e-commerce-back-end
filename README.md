@@ -33,6 +33,19 @@ THEN I am able to successfully create, update, and delete data in my database
 * RICE UNIVERSITY BOOT CAMP Activities for MySQL and ORM.
 * Special thanks to my tutor Ben.
 
+## Usage
+* mysql -u root -p
+* enter password for mysql
+* source db/schema.sql
+* exit OR quit mysql
+* Bye
+
+* npm run seed
+* node server.js
+* Should receive message - App is listening on port 3001!
+
+* Open Insomnia and run tests
+
 ## Link to Deployed Site
 
 There is no deployed site for this application.
