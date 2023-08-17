@@ -155,7 +155,7 @@ router.delete('/:id', (req, res) => {
   })
     .then(productData => {
       if (!productData) {
-        res.status(404).json({ message: 'Sorry, no category exists with this id!' });
+        res.status(404).json({ message: 'Sorry, no product exists with this id!' });
         return;
       }
       res.json(productData);

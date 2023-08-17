@@ -13,7 +13,8 @@ Product.belongsTo(Category, {
 // Categories have many Products: hasMany method is used to create 1 to many 
 // associations between 2 sequelized models. Here Category will have many Products    - Added this code
 Category.hasMany(Product, {
-  foreignKey: 'category_id'
+  foreignKey: 'category_id',
+  onDelete: "CASCADE"
 });
 
 // Products belongToMany Tags (through ProductTag): belongsToMany method is used
@@ -23,14 +24,14 @@ Category.hasMany(Product, {
 Product.belongsToMany(Tag, {
   through: ProductTag,
  // as: 'productTag_tag',
-  foreignKey: 'product_id'
+  //foreignKey: 'product_id'
 });
 
 // Tags belongToMany Products (through ProductTag) - Added this code
 Tag.belongsToMany(Product, {
   through: ProductTag,
  // as: 'productTag_product',
-  foreignKey: 'tag_id'
+  //foreignKey: 'tag_id'
 });
 
 module.exports = {
