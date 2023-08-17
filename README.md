@@ -67,6 +67,7 @@ https://github.com/douglasmarsalis/mod-13-ORM-e-commerce-back-end
 
 [Get_single_cat_prod_tag.webm](https://github.com/douglasmarsalis/mod-13-ORM-e-commerce-back-end/assets/112460009/0c9ce7c3-25c1-451a-ad0e-4ed7b187ae6e)
 
+[Post_put_delete_all.webm](https://github.com/douglasmarsalis/mod-13-ORM-e-commerce-back-end/assets/112460009/b0807c5e-a487-47eb-bc72-9211bd2f6529)
 
 
 ## License
